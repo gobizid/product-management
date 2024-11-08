@@ -1,4 +1,4 @@
-import formatRupiah from "/src/helpers/formatRupiah.js";
+import formatRupiah from "src/helpers/formatRupiah.js";
 
 export default function dataproduct() {
   const myHeaders = new Headers();
