@@ -2,8 +2,9 @@ import loadManagementProduct from "/src/management-product/managementProduct.js"
 import loadManagementProductCategories from "/src/management-product/categories/categories.js";
 import loadManagementProductCategoriesInsert from "/src/management-product/categories/insert/insert.js";
 import loadManagementProductCategoriesUpdate from "/src/management-product/categories/update/update.js";
-
+  
 function loadPage(path) {
+  console.log("Loading page:", path);
   const main = document.getElementById("main");
   main.innerHTML = "";
 
