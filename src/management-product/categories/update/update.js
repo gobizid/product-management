@@ -1,6 +1,6 @@
 import loadComponent from "/src/helpers/loadComponent.js";
-import sidebarTogle from "/src/components/sidebar/sidebar.js";
 import smoothScroll from "/src/helpers/smoothScroll.js";
+import sidebarTogle from "/src/components/sidebar/sidebar.js";
 
 export default function loadManagementProductCategoriesUpdate() {
   const promises = [
@@ -8,14 +8,14 @@ export default function loadManagementProductCategoriesUpdate() {
     loadComponent("header.topbar", "/src/components/topbar/topbar.html"),
     loadComponent(
       "",
-      "/src/pages/management-product/categories/update/update.html"
+      "/src/management-product/categories/update/update.html"
     ),
   ];
 
   Promise.all(promises)
     .then(() => {
-      sidebarTogle();
       smoothScroll();
+      sidebarTogle();
     })
     .catch((error) => {
       console.error("Error loading components:", error);

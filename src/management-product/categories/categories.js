@@ -1,6 +1,6 @@
 import loadComponent from "/src/helpers/loadComponent.js";
-import sidebarTogle from "/src/components/sidebar/sidebar.js";
 import smoothScroll from "/src/helpers/smoothScroll.js";
+import sidebarTogle from "/src/components/sidebar/sidebar.js";
 import getAllCateogories from "/src/management-product/categories/fetch.js";
 
 export default function loadManagementProductCategories() {
@@ -15,8 +15,8 @@ export default function loadManagementProductCategories() {
 
   Promise.all(promises)
     .then(() => {
-      sidebarTogle();
       smoothScroll();
+      sidebarTogle();
       getAllCateogories();
     })
     .catch((error) => {

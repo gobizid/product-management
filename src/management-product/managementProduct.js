@@ -1,6 +1,6 @@
 import loadComponent from "/src/helpers/loadComponent.js";
-import sidebarTogle from "/src/components/sidebar/sidebar.js";
 import smoothScroll from "/src/helpers/smoothScroll.js";
+import sidebarTogle from "/src/components/sidebar/sidebar.js";
 import dataproduct from "/src/management-product/product/tableProduct/dataproduct.js"
 
 export default function loadManagementProductCategories() {
